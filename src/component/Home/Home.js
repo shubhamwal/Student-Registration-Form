@@ -15,7 +15,7 @@ export default function Home({ step, progress, onNextStep, onPreviousStep }) {
 
       {/* Progress Indicator */}
       <div className="progress-indicator fade-in">
-        <p>Step {step} of 5</p>
+        <p>Step {step > 5 ? 5: step} of 5</p>
         <div className="progress-bar">
           <div
             className="progress-bar-inner"
