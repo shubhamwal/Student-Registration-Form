@@ -8,8 +8,10 @@
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
   height: auto;
+  display: flex;
+  margin: 0px auto;
   margin-bottom: 20px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;

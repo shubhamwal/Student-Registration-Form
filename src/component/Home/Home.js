@@ -6,7 +6,7 @@ export default function Home({ step, progress, onNextStep, onPreviousStep }) {
   return (
     <div className="welcome-container">
       <div className="welcome-content">
-        {/* <img src={logo} alt="Logo" className="logo fade-in" /> */}
+        <img src="/images/logo.png" alt="Logo" className="logo fade-in" />
         <h1 className="fade-in">Welcome to Our Registration Process</h1>
         <p className="fade-in">
           Follow the steps to complete your registration in just a few minutes.
