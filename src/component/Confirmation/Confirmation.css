@@ -1,0 +1,56 @@
+.confirmation-container {
+    text-align: center;
+    padding: 2rem;
+    animation: slide-in 0.5s ease-in-out; 
+}
+
+.celebrate-message {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.next-steps {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.summary-section {
+    margin: 2rem 0; 
+}
+
+.button-group {
+    margin-top: 2rem;
+}
+
+.download-btn, .print-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover, .print-btn:hover {
+    background-color: #45a049;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .print-btn {
+        margin-top: 20px; /* Add margin-top for mobile view */
+    }
+}

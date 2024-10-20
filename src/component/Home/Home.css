@@ -1,0 +1,154 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.welcome-content h1 {
+  font-size: 2.5rem; 
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.welcome-content p {
+  font-size: 1.2rem; 
+  display: flex;
+  justify-content: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.progress-indicator {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.prev-btn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+body {
+  background-color: #ffffff; 
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .welcome-content h1 {
+    font-size: 2rem; 
+  }
+
+  .welcome-content p {
+    font-size: 1rem; 
+  }
+
+  .progress-indicator {
+    width: 90%; 
+  }
+
+  .prev-btn,
+  .next-btn {
+    width: 100%; 
+    margin: 10px 0; 
+    padding: 12px 0; 
+    font-size: 1.1rem; 
+  }
+
+  .prev-btn {
+    margin-right: 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-content h1 {
+    font-size: 1.8rem; 
+  }
+
+  .welcome-content p {
+    font-size: 0.9rem; 
+  }
+
+  .logo {
+    width: 120px; 
+  }
+
+  .prev-btn,
+  .next-btn {
+    font-size: 1rem; 
+  }
+
+  .prev-btn {
+    margin-right: 0; 
+  }
+
+  .welcome-content {
+    text-align: center;
+    padding: 0 10px;
+  }
+}

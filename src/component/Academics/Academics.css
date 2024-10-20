@@ -1,0 +1,46 @@
+.academic-interests-form {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .required {
+    color: red; 
+  }
+  
+  .conditional-field {
+    margin-top: 15px; 
+    opacity: 0; 
+    transform: translateY(-10px); 
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  
+  .fade-in {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  
+  .submit-btn {
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  
+  .submit-btn:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+  }
+  
